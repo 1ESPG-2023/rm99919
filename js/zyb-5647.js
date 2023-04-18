@@ -14,5 +14,5 @@ console.log(`Array-3 ${nr3}`)
 
 nr3.forEach((itemDoArray)=>{
     console.log(`Array-3 sendo listado ${itemDoArray}`)
-})
+});
    console.log(`Array-3 sendo listado ${nr3}`)
