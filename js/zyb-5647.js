@@ -44,8 +44,11 @@ nr3.map((numero, key)=>{
 const liELementHTML = document.getElementsByTagName("li");
 const liELementArray = [...liELementHTML];
 liELementArray.map((item,key)=>{
-    console.log(`${key+1}-${item.textContent}`)
+    if (item.textContent == "item-39"){
+        console.log(`${key+1}-${item.textContent}`)
+    }  
 })
-console.log(liELementArray);
+
+
 
 
