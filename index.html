@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Arrays</title>
     <script src="/js/zyb-5647.js" defer></script>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <h1>Arrays</h1>
-    <div>
-        <ul>
-            <li><a href="#">item-1</a></li>
-            <li><a href="#">item-2</a></li>
-            <li><a href="#">item-3</a></li>
-            <li><a href="#">item-4</a></li>
-            <li><a href="#">item-5</a></li>
-        </ul>
+    <header class ="cabeçalho">
+        <span>Cabeçalho</span>
+    </header>
+    <div class="container">
+        <aside class="l-e">
+            <span>B-E</span>
+
+        </aside>
+        <section class="central">
+            <span>Conteudo</span>
+        </section>
+        <aside class="l-d">
+            <span>B-D</span>
+
+        </aside>
+
     </div>
+    <footer class="rodape">
+        <span>Rodapé</span>
+        <button value = "10" onclick="console.log(`resultado : ${soma(this.value, 10, 5)}`)">click</button>
+    </footer>
 </body>
 </html>
