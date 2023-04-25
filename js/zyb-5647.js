@@ -1,10 +1,10 @@
-//const liELement = document.getElementsByTagName("li");
-//console.log(liELement)
-//for (let index = 0; index < liELement.length; index++) {
+// const liELement = document.getElementsByTagName("li");
+// console.log(liELement)
+// for (let index = 0; index < liELement.length; index++) {
 //    console.log(liELement[index].textContent)
-//}
+// }
 
-//declaração de arrays
+// declaração de arrays
 // let nr1 = [1, 2, 3, 4, 5]
 // let nr2 = [, 6, 7, 8, 9, 10]
 // let nr3 = [nr1, nr2]
@@ -49,20 +49,71 @@
 //     }  
 // })
 
-function soma(p1, p2, p3){
-    nr1 = p1;
-    nr2 = p2;
-    return (parseInt(nr1) + parseInt(nr2) + parseInt(p3));
-    // console.log(`Resultado : ${parseInt(nr1) + parseInt(nr2) + parseInt(parametro)}`);
-    // console.log(`este foi o pararamtro que foi passado para a função: ${parametro}`);
-}
-soma();
+// function soma(p1, p2, p3){
+//     nr1 = p1;
+//     nr2 = p2;
+//     return (parseInt(nr1) + parseInt(nr2) + parseInt(p3));
+//     // console.log(`Resultado : ${parseInt(nr1) + parseInt(nr2) + parseInt(parametro)}`);
+//     // console.log(`este foi o pararamtro que foi passado para a função: ${parametro}`);
+// }
+// soma();
 
-//arrow function
-const mudaCor = ()=>{
-    //função set-TIMEOUT    
-    setTimeout(alert("EXECUTOU"), 50000);
+// //arrow function
+// const mudaCor = ()=>{
+//     //função set-TIMEOUT    
+//     setTimeout(alert("EXECUTOU"), 50000);
+// }
+
+//Função tradicional
+
+function MudaCor(){
+    let r = "";
+    let g = "";
+    let b = "";
+    //random = gera numeros aleatorios entre 0 e 1
+    //ceil, floor e round que arredondam o numero para cima, para baixo ou aleatoriamente
+    //determinando para variavel r um valor entre 0 e 255
+    r = Math.round(Math.random() * 255);
+    g = Math.round(Math.random() * 255);
+    b = Math.round(Math.random() * 255);
+    const cabecalho = document.querySelector(".cabeçalho");
+    cabecalho.setAttribute("style", `background-color: rgb(${r}, ${g}, ${b})`)
+    tmp = setTimeout(MudaCor, 1000)
 
 }
+MudaCor();
+
+//exercicio 1
+
+//alterar banner
+
+function alterarBanner1(){
+
+   
+   let esquerda = "/img/banner-lateral-1.png";
+   const img1 = document.querySelector(".l-e > img");
+   img1.src = esquerda;
+   tmp = setTimeout(alterarBanner2, 1000);
+}
+function alterarBanner2(){
+
+    let esquerda = "/img/banner-lateral-2.png";
+    const img2 = document.querySelector(".l-e > img");
+    img2.src = esquerda;
+    tmp = setTimeout(alterarBanner3, 1000);
+ }
+
+ function alterarBanner3(){
+
+    let esquerda = "/img/banner-lateral-3.png";
+    const img3 = document.querySelector(".l-e > img");
+    img3.src = esquerda;
+    tmp = setTimeout(alterarBanner1, 1000);
+ }
+
+alterarBanner1()
+
+
+
 
 
