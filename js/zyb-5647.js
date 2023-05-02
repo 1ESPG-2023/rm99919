@@ -160,5 +160,6 @@ inputUser.addEventListener("keyup", () => {
    console.log(inputUser.value.length)
    }else{
       inputUser.setAttribute("style", `outline-color: #dddddd`);
+      labelUser.setAttribute("style", `color: #dddddd`);
    }
 });
