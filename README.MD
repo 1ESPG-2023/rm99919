@@ -3,4 +3,5 @@
 -2)listando array com Map e ForEach
 -3)espalhar o array com[...]
 -4)convertendo htmllCollection em array de forma indireta
--4)funções
+-5)funções
+6)Login

@@ -66,74 +66,60 @@
 //--------------------------------------------------------------------------------------------------------------
 //Função tradicional
 
-function MudaCor(){
-    let r = "";
-    let g = "";
-    let b = "";
-    //random = gera numeros aleatorios entre 0 e 1
-    //ceil, floor e round que arredondam o numero para cima, para baixo ou aleatoriamente
-    //determinando para variavel r um valor entre 0 e 255
-    r = Math.round(Math.random() * 255);
-    g = Math.round(Math.random() * 255);
-    b = Math.round(Math.random() * 255);
-    const cabecalho = document.querySelector(".cabeçalho");
-    cabecalho.setAttribute("style", `background-color: rgb(${r}, ${g}, ${b})`)
-    tmp = setTimeout(MudaCor, 1000)
+// function MudaCor(){
+//     let r = "";
+//     let g = "";
+//     let b = "";
+//     //random = gera numeros aleatorios entre 0 e 1
+//     //ceil, floor e round que arredondam o numero para cima, para baixo ou aleatoriamente
+//     //determinando para variavel r um valor entre 0 e 255
+//     r = Math.round(Math.random() * 255);
+//     g = Math.round(Math.random() * 255);
+//     b = Math.round(Math.random() * 255);
+//     const cabecalho = document.querySelector(".cabeçalho");
+//     cabecalho.setAttribute("style", `background-color: rgb(${r}, ${g}, ${b})`)
+//     tmp = setTimeout(MudaCor, 1000)
 
-}
-MudaCor();
-//--------------------------------------------------------------------------------------------------------------
-//exercicio 1
+// }
+// MudaCor();
+// //--------------------------------------------------------------------------------------------------------------
+// //exercicio 1
 
-//alterar banner
+// //alterar banner
 
-function alterarBanner1(){
+// function alterarBanner1(){
 
-   let img1 = "img/banner-lateral-1.png";
-   const esquerda = document.querySelector(".l-e img");
-   const direita = document.querySelector(".l-d img")
-   esquerda.src = img1;
-   direita.src = img1
-   tempo = setTimeout(alterarBanner2, 1000);
-}
-function alterarBanner2(){
+//    let img1 = "img/banner-lateral-1.png";
+//    const esquerda = document.querySelector(".l-e img");
+//    const direita = document.querySelector(".l-d img")
+//    esquerda.src = img1;
+//    direita.src = img1
+//    tempo = setTimeout(alterarBanner2, 1000);
+// }
+// function alterarBanner2(){
 
-    let img1 = "img/banner-lateral-2.png";
-    const esquerda = document.querySelector(".l-e img");
-    const direita = document.querySelector(".l-d img")
-    esquerda.src = img1;
-    direita.src = img1
-    tempo = setTimeout(alterarBanner3, 1000);
- }
+//     let img1 = "img/banner-lateral-2.png";
+//     const esquerda = document.querySelector(".l-e img");
+//     const direita = document.querySelector(".l-d img")
+//     esquerda.src = img1;
+//     direita.src = img1
+//     tempo = setTimeout(alterarBanner3, 1000);
+//  }
 
- function alterarBanner3(){
+//  function alterarBanner3(){
 
-    let img1 = "img/banner-lateral-3.png";
-    const esquerda = document.querySelector(".l-e img");
-    const direita = document.querySelector(".l-d img")
-    esquerda.src = img1;
-    direita.src = img1
-    tempo = setTimeout(alterarBanner1, 1000);
- }
-alterarBanner1()
-//--------------------------------------------------------------------------------------------------------------
-//botao liga e desliga 
-const botao = document.querySelector(".central button");
-botao.addEventListener("click", ()=> {
-   const imgLampada = document.querySelector(".central img");
-   // const botao = document.querySelector(".central button");
-
-   if(botao.textContent == "LIGAR"){
-      imgLampada.src = "/img/pic_bulbon.gif"
-      botao.textContent = "DESLIGAR"
-   }else{
-      imgLampada.src = "/img/pic_bulboff.gif"
-      botao.textContent = "LIGAR"
-   }
-});
-//--------------------------------------------------------------------------------------------------------------
-// function ligaEDesliga(){
-
+//     let img1 = "img/banner-lateral-3.png";
+//     const esquerda = document.querySelector(".l-e img");
+//     const direita = document.querySelector(".l-d img")
+//     esquerda.src = img1;
+//     direita.src = img1
+//     tempo = setTimeout(alterarBanner1, 1000);
+//  }
+// alterarBanner1()
+// //--------------------------------------------------------------------------------------------------------------
+// //botao liga e desliga 
+// const botao = document.querySelector(".central button");
+// botao.addEventListener("click", ()=> {
 //    const imgLampada = document.querySelector(".central img");
 //    // const botao = document.querySelector(".central button");
 
@@ -144,22 +130,36 @@ botao.addEventListener("click", ()=> {
 //       imgLampada.src = "/img/pic_bulboff.gif"
 //       botao.textContent = "LIGAR"
 //    }
-// }
-//--------------------------------------------------------------------------------------------------------------
+// });
+// //--------------------------------------------------------------------------------------------------------------
+// // function ligaEDesliga(){
 
-const inputUser = document.querySelector("input[name = 'nmUser']");
-const labelUser = document.querySelector("label[for = 'idUser']")
-inputUser.addEventListener("focus", () => {
-   inputUser.setAttribute("style", `outline-color: #ff0000`);
+// //    const imgLampada = document.querySelector(".central img");
+// //    // const botao = document.querySelector(".central button");
 
-});
-inputUser.addEventListener("keyup", () => {
-   if(inputUser.value.length<8){
-   inputUser.setAttribute("style", `outline-color: #ff0000`);
-   labelUser.setAttribute("style", `color: #ff0000`);
-   console.log(inputUser.value.length)
-   }else{
-      inputUser.setAttribute("style", `outline-color: #dddddd`);
-      labelUser.setAttribute("style", `color: #dddddd`);
-   }
-});
+// //    if(botao.textContent == "LIGAR"){
+// //       imgLampada.src = "/img/pic_bulbon.gif"
+// //       botao.textContent = "DESLIGAR"
+// //    }else{
+// //       imgLampada.src = "/img/pic_bulboff.gif"
+// //       botao.textContent = "LIGAR"
+// //    }
+// // }
+// //--------------------------------------------------------------------------------------------------------------
+
+// const inputUser = document.querySelector("input[name = 'nmUser']");
+// const labelUser = document.querySelector("label[for = 'idUser']")
+// inputUser.addEventListener("focus", () => {
+//    inputUser.setAttribute("style", `outline-color: #ff0000`);
+
+// });
+// inputUser.addEventListener("keyup", () => {
+//    if(inputUser.value.length<8){
+//    inputUser.setAttribute("style", `outline-color: #ff0000`);
+//    labelUser.setAttribute("style", `color: #ff0000`);
+//    console.log(inputUser.value.length)
+//    }else{
+//       inputUser.setAttribute("style", `outline-color: #dddddd`);
+//       labelUser.setAttribute("style", `color: #dddddd`);
+//    }
+// });
