@@ -18,9 +18,14 @@
             <span><img id = "img1" src="/img/banner-lateral-1.png" alt=""></span>
 
         </aside>
+        
         <section class="central">
-            <span>Conteudo</span>
+            <div>
+                <img src="/img/pic_bulboff.gif" alt="">
+            </div>
+            <button>LIGAR</button>
         </section>
+        
         <aside class="l-d">
             
             <span><img id="img2" src="/img/banner-lateral-2.png" alt=""></span>
@@ -28,6 +33,27 @@
         </aside>
 
     </div>
+
+    <div class="info">
+        <form action="index.html" method="get" onsubmit="return false">
+            <fieldset>
+                <legend>LOGIN</legend>
+                <div>
+                    <label for="idUser">Usuario - (MINIMO 8 LETRAS)</label>
+                    <input type="text" name="nmUser" id="idUser" placeholder="Usuario">
+                </div>
+                <div>
+                    <label for="idPass">Senha</label>
+                    <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                </div>
+                <div>
+                    <button type="button">LOGIN</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
     <footer class="rodape">
         <span>Rodapé</span>
         <!-- <button value = "10" onclick="console.log(`resultado : ${soma(this.value, 10, 5)}`)">click</button> -->
