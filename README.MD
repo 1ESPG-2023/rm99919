@@ -4,4 +4,4 @@
 -3)espalhar o array com[...]
 -4)convertendo htmllCollection em array de forma indireta
 -5)funções
-6)Login
+-6)Login
